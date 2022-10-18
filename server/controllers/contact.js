@@ -13,7 +13,6 @@ module.exports.displayContactList = (req, res, next) => {
         }
         else
         {
-            //console.log(BookList);
 
             res.render('contact/list', {title: 'Business Contact', ContactList: contactList, 
             displayName: req.user ? req.user.displayName: ''});      
@@ -60,7 +59,7 @@ module.exports.displayEditPage = (req, res, next) => {
         else
         {
             //show the edit view
-            res.render('contact/edit', {title: 'Edit Contact', contact: ContactToEdit,
+            res.render('contact/update', {title: 'Edit Contact', contact: ContactToEdit,
             displayName: req.user ? req.user.displayName: ''})
         }
     });
@@ -84,7 +83,7 @@ module.exports.processEditPage = (req, res, next) => {
         }
         else
         {
-            // refresh the book list
+            // refresh the contact list
             res.redirect('/contact-list');
         }
     });
@@ -101,7 +100,7 @@ module.exports.performDelete = (req, res, next) => {
         }
         else
         {
-             // refresh the book list
+             // refresh the contact list
              res.redirect('/contact-list');
         }
     });

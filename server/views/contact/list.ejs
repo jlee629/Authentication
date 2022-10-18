@@ -5,13 +5,10 @@
 <div class="content">
     <!-- Main Content -->
     <h3 class="intro"><%= title %></h3>
-    <main class="container">
-        
-            
-                
+    <main class="container">     
         <% if(typeof displayName == 'string' && displayName) {%>
         <a href="/contact-list/add" class="btn btn-primary float-left" role="button">
-        <i class="fas fa-plus-circle"></i> Add a Book</a>
+        <i class="fas fa-plus-circle"></i> Add a Contact</a>
         <% } %>
         <br>
         <table class="table table-bordered table-sm">
@@ -41,11 +38,11 @@
                         
                         <td class="text-center col-1">
                             <a href="/contact-list/edit/<%= ContactList[count]._id %>" class="btn btn-primary btn-sm">
-                            <i class="fas fa-pencil-alt"></i> Edit</a>
+                            <i class="fas fa-pencil-alt"></i> Update</a>
                         </td>
                         <td class="text-center col-1">
                             <a href="/contact-list/delete/<%= ContactList[count]._id %>" class="btn btn-danger btn-sm delete">
-                            <i class="fas fa-trash-alt"></i> Del</a>
+                            <i class="fas fa-trash-alt"></i> Delete</a>
                         </td>
                     <% } else { %>
                         <td class="text-center col-2"><%= ContactList[count].name %></td>

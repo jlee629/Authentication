@@ -11,6 +11,8 @@ app.js, Jungyu Lee, 301236221, Oct 18 2022
 (function () {
     function Start() {
         console.log("App Started!");
+
+        // When delete button is clicked, the user is asked once again to delete
         $("a.delete").on("click", function (event) {
             if (!confirm("Are you sure?")) {
                 event.preventDefault();
@@ -26,6 +28,8 @@ app.js, Jungyu Lee, 301236221, Oct 18 2022
     let message = document.getElementById('message');
     let submit = document.getElementById('submit');
 
+    // on Contact page, if submit button is clicked, the information will be shown as a pop up message, and the user will be redirected to home page.
+
     if(submit){
         submit.addEventListener('click', ()=>{
             alert("First Name: " + fname.value + '\n' + "Last Name: " + lname.value + '\n' + 
@@ -38,4 +42,4 @@ app.js, Jungyu Lee, 301236221, Oct 18 2022
     window.addEventListener("load", Start);
 })();
 
-    // on Contact page, if submit button is clicked, the information will be shown as a pop up message, and the user will be redirected to home page.
+    
