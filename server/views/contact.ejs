@@ -1,0 +1,51 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  
+
+ 
+  <!-- Main Content -->
+  
+  
+<div class="content"">    
+  <%- include partials/content.ejs %>
+  <form>
+    <fieldset>   
+      <legend class="legend mycontact">Send me a message!</legend> 
+        <div>
+            <label class="form-label" for="first-name">First Name</label><br>
+            <input class="form-input" id="first-name" type="text">
+        </div>
+        <div>
+            <label class="form-label" for="last-name">Last Name</label><br>
+            <input class="form-input" id="last-name" type="text">
+        </div>
+        <div>
+            <label class="form-label" for="email">E-mail</label><br>
+            <input class="form-input" id="email" type="email">
+        </div>
+        <div>
+            <label class="form-label" for="number">Contact Number</label><br>
+            <input class="form-input" id="number" type="text">
+        </div>
+            <div>
+            <label class="form-label" for="message">Message</label><br>
+            <textarea class="form-input message-box" id="message" type="text"></textarea>
+        </div>
+        <input type="button" id="submit" class="form-submit" value="SEND">
+    </fieldset>
+  </form>
+  <div class="direct-contacts">
+    <p class="phone direct-contact"><i class="fa-solid fa-mobile"></i> +1 (647) 618-9121</p>
+    <p class="email direct-contact"><i class="fa-solid fa-envelope"></i> jlee629@my.centennialcollege.ca</p>
+  </div>
+</div>
+
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
+
+
+

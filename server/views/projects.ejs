@@ -1,0 +1,39 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  
+
+ 
+  <!-- Main Content -->
+  
+  
+<div class="content">    
+  <%- include partials/content.ejs %>
+  <h4 class="myprojects">Each image is linked to GitHub links</h4>
+  <div class="project-images">
+
+    <a class="git-link" href="https://github.com/jlee629/Photo-Gallery"><img class="project-photo project1-photo" src="/Assets/images/project1.png" alt="project1" width="500" height="350"></a>
+       
+    <a class="git-link" href="https://github.com/jlee629/Photo-Slideshow"><img class="project-photo" src="/Assets/images/project2.png" alt="project2" width="500" height="350"></a>  
+    
+    <a class="git-link" href="https://github.com/jlee629/Prime-Ministers-WinForms"><img class="project-photo project3-photo" src="/Assets/images/project3.png" alt="project3" width="500" height="350"></a> 
+
+    
+  </div>
+  <br>
+
+  <div class=project-descriptions>
+  
+    <p class="project-description project1-desc"><scan class="skill-name">Photo Viewer</scan> (individual project) <br> Users can move through the picture by clicking on the next or previous buttons. They can mark photos as thier favorites for up to 5 pictures.</p>
+    <p class="project-description project2-desc"><scan class="skill-name">Photo Slideshow</scan> (individual project) <br> I designed and developed a photo slideshow using jQuery and Ajax to allow users to view the slideshow without touching the screen</p>
+    <p class="project-description project3-desc"><scan class="skill-name">History of Prime Ministers</scan> (individual project) <br> I created a Windows forms application using C# to show a list of information to the user about the prime ministers of Canada.</p>
+  </div>
+</div>
+
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
+
+
