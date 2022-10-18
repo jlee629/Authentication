@@ -1,9 +1,11 @@
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
+const { displayAboutPage } = require('.');
 
 // create a reference to the model
 let Contact = require('../models/contact');
+let mysort = { name: 1 }; 
 
 module.exports.displayContactList = (req, res, next) => {
     Contact.find((err, contactList) => {
@@ -13,11 +15,11 @@ module.exports.displayContactList = (req, res, next) => {
         }
         else
         {
-
-            res.render('contact/list', {title: 'Business Contact', ContactList: contactList, 
-            displayName: req.user ? req.user.displayName: ''});      
+                res.render('contact/list', {title: 'Business Contact', ContactList: contactList, 
+                displayName: req.user ? req.user.displayName: ''}); 
         }
-    });
+    }).sort({name:"asc"});
+    
 }
 
 module.exports.displayAddPage = (req, res, next) => {
