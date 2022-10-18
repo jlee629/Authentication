@@ -3,19 +3,23 @@
 <%- include partials/main_nav.ejs %>
   
 
+ 
   <!-- Main Content -->
-  <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
-      
-    </div>
-  </main>
+  
+  
+<div class="content" style="background-image: url('Assets/images/index.jpeg'); background-size: cover">    
+
+  <%- include partials/content.ejs %>
+  <h4 class="ms">Mission Statement</h4>
+  <p class="ms-quote">"I am the inspiration"</p>
+  <p><i class="fa-sharp fa-solid fa-ellipsis-vertical"></i></p>
+  <a class="about-link" href="/about">Let me walk you through my story</a>
+</div>
+
   
 <%- include partials/bottom_nav.ejs %>  
 
 <%- include partials/footer.ejs %>
   
-
-
 
 

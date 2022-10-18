@@ -1,1 +1,236 @@
-/* custom css goes here */
+/* custom css goes here 
+
+app.css, Jungyu Lee, 301236221, Oct 18 2022
+
+*/
+
+/* this is the body section */
+.body {
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+
+.content {
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,56,85,1) 0%, rgba(229,245,249,1) 0%, rgba(242,249,251,1) 51%, rgba(192,241,251,1) 100%, rgba(36,217,254,1) 100%, rgba(0,212,255,1) 100%);
+    margin: 0 auto;
+}
+
+.intro {
+    font-size:40px;
+    color:#2b2c2e;
+    font-variant: small-caps;
+    background-color: #2b2c2e;
+    color:whitesmoke
+}
+
+/* this is nav section */
+
+.navbar-above {
+    border-bottom: 3px solid whitesmoke;
+}
+
+.navbar-below {
+    border-top: 3px solid whitesmoke;
+}
+
+.navbar-text {
+    font-size: 0.8em;
+    font-weight: bold;
+    color:whitesmoke;
+}
+
+.navbar-nav {
+    font-weight: bold;
+}
+
+/* this is index.ejs section */
+
+.ms {
+    margin-top: 180px;
+    font-size: 50px;
+}
+
+.ms-quote {
+    margin-top: 40px;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.about-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: #2b2c2e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about-link:hover {
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* this is about.ejs section */
+
+.myphoto {
+    margin-top: 0px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.mydescription {
+    color:#2b2c2e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.resume {
+    text-decoration: none;
+    color:#045e94;
+    text-decoration: underline;
+}
+
+.resume:hover {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/* this is projects.ejs section */
+
+.myprojects {
+    font-size:30px;
+    margin-top:0px;
+}
+
+.project-images {
+    margin-top: -60px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.project-photo {
+    display:block;
+    margin-bottom: 10px;
+    margin-top:20px;
+}
+
+.project-descriptions {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.project-description {
+    text-align:center;
+    width:300px;
+    background-color: #2b2c2e;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+}
+
+/* this is services.ejs section */
+
+.myservices {
+    color:#2b2c2e;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    font-size: 50px;
+}
+
+.skillset {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.skill-name{
+    background-color:whitesmoke;
+    color:#2b2c2e;
+    font-weight: bold;
+    text-align: center;
+    width:100%;
+    display: inline-block;
+}
+
+.skills {
+    text-align: center;
+    width:500px;
+    font-size: 15px;
+    background-color: #2b2c2e;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+}
+
+/* this is contact.ejs section */
+
+.contactinfo {
+    font-weight: bold;
+}
+
+.message-box {
+    width:200px;
+    height: 150px;
+}
+
+
+.form-label {
+    font-size: 15px;
+    margin-bottom: -3px;
+    font-weight: bold;
+}
+
+.form-input {
+    margin-bottom: 2px;
+}
+
+.form-submit{
+    background-color: black;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.direct-contacts {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    position: relative;
+    bottom:0;
+    
+} 
+
+.direct-contact {
+    text-align: center;
+    width:300px;
+    background-color: #2b2c2e;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+}
+
+.mycontact{
+    font-size: 40px;
+    margin-top: -15px;
+}
+
+/* this is logo section. When it gets smaller it moves to the right*/
+
+@media only screen and (max-width: 992px) {
+.navbar-brand {
+    position: absolute;
+    right: -2px;
+    top: 3px;
+}
+}
+
+/* https://express-portfolio-site-jlee629.herokuapp.com/ */
