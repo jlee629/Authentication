@@ -9,52 +9,52 @@
         
             
                 
+        <% if(typeof displayName == 'string' && displayName) {%>
+        <a href="/contact-list/add" class="btn btn-primary float-left" role="button">
+        <i class="fas fa-plus-circle"></i> Add a Book</a>
+        <% } %>
+        <br>
+        <table class="table table-bordered table-sm">
+            <!-- Header Row-->
+            <tr class="thead-dark">
                 <% if(typeof displayName == 'string' && displayName) {%>
-                <a href="/contact-list/add" class="btn btn-primary" role="button">
-                <i class="fas fa-plus-circle"></i> Add a Book</a>
+                    <th class="text-center col-2">Contact Name</th>
+                    <th class="text-center col-2">Contact Number</th>
+                    <th class="text-center col-2">Email Address</th>
+                    <th class="text-center col-1"></th>
+                    <th class="text-center col-1"></th>
+                <% } else { %>
+                    <th class="text-center col-2">Contact Name</th>
+                    <th class="text-center col-2">Contact Number</th>
+                    <th class="text-center col-2">Email Address</th>
                 <% } %>
-                <br>
-                <table class="table table-bordered table-striped table-hover">
-                    <!-- Header Row-->
-                    <tr class="">
-                        <% if(typeof displayName == 'string' && displayName) {%>
-                            <th class="text-center col-2">Contact Name</th>
-                            <th class="text-center col-2">Contact Number</th>
-                            <th class="text-center col-2">Email Address</th>
-                            <th class="text-center col-1"></th>
-                            <th class="text-center col-1"></th>
-                        <% } else { %>
-                            <th class="text-center col-2">Contact Name</th>
-                            <th class="text-center col-2">Contact Number</th>
-                            <th class="text-center col-2">Email Address</th>
-                        <% } %>
-                    </tr>
+            </tr>
 
-                    <!-- Repeatable Template Row -->
+            <!-- Repeatable Template Row -->
 
-                    <% for(let count = 0; count < ContactList.length; count++) { %>
-                        <tr class="">
-                            <% if(typeof displayName == 'string' && displayName) {%>
-                                <td class="text-center col-2"><%= ContactList[count].name %></td>
-                                <td class="text-center col-2"><%= ContactList[count].number %></td>
-                                <td class="text-center col-2"><%= ContactList[count].email %></td>
-                                
-                                <td class="text-center col-1">
-                                    <a href="/contact-list/edit/<%= ContactList[count]._id %>" class="btn btn-primary btn-sm">
-                                    <i class="fas fa-pencil-alt"></i> Edit</a>
-                                </td>
-                                <td class="text-center col-1">
-                                    <a href="/contact-list/delete/<%= ContactList[count]._id %>" class="btn btn-danger btn-sm">
-                                    <i class="fas fa-trash-alt"></i> Del</a>
-                                </td>
-                            <% } else { %>
-                                <td class="text-center col-2"><%= ContactList[count].name %></td>
-                                <td class="text-center col-2"><%= ContactList[count].number %></td>
-                                <td class="text-center col-2"><%= ContactList[count].email %></td>
-                            <% } %>
-                        </tr>
+            <% for(let count = 0; count < ContactList.length; count++) { %>
+                <tr class="">
+                    <% if(typeof displayName == 'string' && displayName) {%>
+                        <td class="text-center col-2"><%= ContactList[count].name %></td>
+                        <td class="text-center col-2"><%= ContactList[count].number %></td>
+                        <td class="text-center col-2"><%= ContactList[count].email %></td>
+                        
+                        <td class="text-center col-1">
+                            <a href="/contact-list/edit/<%= ContactList[count]._id %>" class="btn btn-primary btn-sm">
+                            <i class="fas fa-pencil-alt"></i> Edit</a>
+                        </td>
+                        <td class="text-center col-1">
+                            <a href="/contact-list/delete/<%= ContactList[count]._id %>" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i> Del</a>
+                        </td>
+                    <% } else { %>
+                        <td class="text-center col-2"><%= ContactList[count].name %></td>
+                        <td class="text-center col-2"><%= ContactList[count].number %></td>
+                        <td class="text-center col-2"><%= ContactList[count].email %></td>
                     <% } %>
-                </table>
+                </tr>
+            <% } %>
+        </table>
             
        
     </main>

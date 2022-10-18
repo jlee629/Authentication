@@ -233,6 +233,10 @@ app.css, Jungyu Lee, 301236221, Oct 18 2022
     text-align: center;
 }
 
+.margin-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 /* this is logo section. When it gets smaller it moves to the right*/
