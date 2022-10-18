@@ -30,7 +30,7 @@ module.exports.processAddPage = (req, res, next) => {
     let newContact = Contact({
         "name": req.body.name,
         "number": req.body.number,
-        "price": req.body.email
+        "email": req.body.email
     });
 
     Contact.create(newContact, (err, Contact) =>{
@@ -72,10 +72,8 @@ module.exports.processEditPage = (req, res, next) => {
     let updatedContact = Contact({
         "_id": id,
         "name": req.body.name,
-        "author": req.body.author,
-        "published": req.body.published,
-        "description": req.body.description,
-        "price": req.body.price
+        "number": req.body.number,
+        "email": req.body.email
     });
 
     Contact.updateOne({_id: id}, updatedContact, (err) => {

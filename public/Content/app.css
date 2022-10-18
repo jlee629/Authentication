@@ -17,6 +17,11 @@ app.css, Jungyu Lee, 301236221, Oct 18 2022
     margin: 0 auto;
 }
 
+.content2 {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,56,85,1) 0%, rgba(229,245,249,1) 0%, rgba(242,249,251,1) 51%, rgba(192,241,251,1) 100%, rgba(36,217,254,1) 100%, rgba(0,212,255,1) 100%);
+
+}
+
 .intro {
     font-size:40px;
     color:#2b2c2e;
@@ -222,6 +227,13 @@ app.css, Jungyu Lee, 301236221, Oct 18 2022
     font-size: 40px;
     margin-top: -15px;
 }
+
+/* this is business contact section */
+.center {
+    text-align: center;
+}
+
+
 
 /* this is logo section. When it gets smaller it moves to the right*/
 
