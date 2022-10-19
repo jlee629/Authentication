@@ -1,3 +1,5 @@
+//user.js, Jungyu Lee, 301236221, Oct 18 2022
+
 // require modules for the User Model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');

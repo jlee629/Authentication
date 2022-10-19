@@ -1,3 +1,5 @@
+//db.js Jungyu Lee, 301236221, Oct 18 2022
+
 module.exports = 
 {
     //"URI": "mongodb://127.0.0.1/book_store",

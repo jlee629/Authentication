@@ -1,3 +1,5 @@
+//contact.js, Jungyu Lee, 301236221, Oct 18 2022
+
 let mongoose = require('mongoose');
 
 // create a model class
